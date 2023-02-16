@@ -1,0 +1,55 @@
+/* CS-Bold */
+@font-face {
+  font-family: 'CircularStd';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../../fonts/CircularStd-Bold.eot');
+  src: local(''),
+    url('../../fonts/CircularStd-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/CircularStd-Bold.woff2') format('woff2'),
+    url('../../fonts/CircularStd-Bold.woff') format('woff'),
+    url('../../fonts/CircularStd-Bold.ttf') format('truetype');
+}
+
+/* San Francisco Pro */
+@font-face {
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../../fonts/SFProDisplay-Regular.eot');
+  src: local(''),
+    url('../../fonts/SFProDisplay-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../fonts/SFProDisplay-Regular.woff2') format('woff2'),
+    url('../../fonts/SFProDisplay-Regular.woff') format('woff'),
+    url('../../fonts/SFProDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../../fonts/SFProDisplay-Medium.eot');
+  src: local(''),
+    url('../../fonts/SFProDisplay-Medium.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../fonts/SFProDisplay-Medium.woff2') format('woff2'),
+    url('../../fonts/SFProDisplay-Medium.woff') format('woff'),
+    url('../../fonts/SFProDisplay-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../../fonts/SFProDisplay-Bold.eot');
+  src: local(''),
+    url('../../fonts/SFProDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/SFProDisplay-Bold.woff2') format('woff2'),
+    url('../../fonts/SFProDisplay-Bold.woff') format('woff'),
+    url('../../fonts/SFProDisplay-Bold.ttf') format('truetype');
+}

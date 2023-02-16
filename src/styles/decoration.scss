@@ -1,0 +1,11 @@
+@import './variables/colors.scss';
+
+@mixin decoration() {
+  position: absolute;
+  content: '';
+  width: 61px;
+  height: 60px;
+
+  border: 2px solid $pirpleLight;
+  @content;
+}

@@ -1,0 +1,106 @@
+@import 'styles/flex';
+@import 'styles/variables/colors';
+@import 'styles/variables/media-queries';
+@import 'styles/decoration';
+
+.wrapper {
+  @include flex(row, center, space-between);
+  padding: 16px 16px 20px 16px;
+  border: 1px solid $greyLight;
+  border-radius: 12px;
+  background: $white;
+  width: 100%;
+  min-width: 280px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+
+  @include custom(1230px) {
+    max-width: 280px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  &.LTElement:after {
+    @include decoration;
+    top: 50%;
+    right: -63px;
+    border-radius: 0 16px;
+    border-left: none;
+    border-bottom: none;
+  }
+  &.LBElement:after {
+    @include decoration;
+    bottom: 50%;
+    right: -63px;
+    border-radius: 16px 0;
+    border-top: none;
+    border-left: none;
+  }
+  &.RTElement:after {
+    @include decoration;
+    top: 50%;
+    left: -63px;
+    border-radius: 16px 0;
+    border-right: none;
+    border-bottom: none;
+  }
+  &.RBElement:after {
+    @include decoration;
+    bottom: 50%;
+    left: -63px;
+    border-radius: 0 16px;
+    border-right: none;
+    border-top: none;
+  }
+
+  &.LTElement:after,
+  &.LBElement:after,
+  &.RTElement:after,
+  &.RBElement:after {
+    display: none;
+    @include custom(1230px) {
+      display: initial;
+    }
+  }
+
+  &Active {
+    border: 2px solid $violetSoft;
+    padding: 15px 15px 19px 15px;
+
+    &.LTElement:after,
+    &.LBElement:after,
+    &.RTElement:after,
+    &.RBElement:after {
+      border-color: $violetSoft;
+    }
+  }
+}
+
+.content {
+  @include flex(row, center, center);
+}
+
+.imgWrapper {
+  width: 48px;
+  height: 48px;
+  margin-right: 8px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.heading {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: $violetDarken;
+}
+
+.subheading {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  color: $violetLight;
+}

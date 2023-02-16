@@ -1,0 +1,26 @@
+@import 'styles/variables/media-queries';
+@import 'styles/flex';
+
+.wrapper {
+  @include flex(column);
+  // margin-top: 75px;
+
+  @include custom(1230px) {
+    @include flex(row);
+    // margin-top: 60px;
+  }
+}
+
+.serviceBlock {
+  width: auto;
+
+  @include tablet {
+    width: 70%;
+    margin: auto;
+  }
+  @include custom(1230px) {
+    width: auto;
+    margin: inherit;
+    margin-top: 50px;
+  }
+}

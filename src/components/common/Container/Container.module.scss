@@ -1,0 +1,12 @@
+@import 'styles/variables/media-queries.scss';
+
+.container {
+  overflow-y: hidden;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  @include tablet {
+    max-width: 1230px;
+  }
+}

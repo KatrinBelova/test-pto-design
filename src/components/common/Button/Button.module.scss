@@ -1,0 +1,36 @@
+@import 'styles/variables/colors';
+@import 'styles/variables/media-queries';
+@import 'styles/flex';
+
+.btn {
+  border-radius: 12px;
+  font-weight: 700;
+  @include flex(row, center, center);
+  cursor: pointer;
+
+  &Contained {
+    background-color: $violetSoft;
+    border: 1px solid $violetSoft;
+    color: $white;
+  }
+
+  &Outlined {
+    background-color: $white;
+    border: 1px solid rgba(26, 7, 69, 0.1);
+    color: $violetDark;
+  }
+
+  &Sm {
+    padding: 8.5px;
+
+    font-size: 12px;
+    line-height: 19px;
+  }
+
+  &Lg {
+    padding: 11px;
+
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

@@ -1,0 +1,31 @@
+@import './styles/globals.scss';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: $sf-pro;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent; //FYI: is a non-standard CSS property that sets the color of the highlight that appears over a link while it's being tapped
+}
+
+*[data-disabled='true'] {
+  opacity: 0.5;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}
