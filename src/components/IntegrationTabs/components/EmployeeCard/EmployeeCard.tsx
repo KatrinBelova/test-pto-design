@@ -1,10 +1,10 @@
 import classNames from 'classnames';
-import { IServicesData } from 'components/IntegrationTabs/serviesData';
+import { IServicesDictionary } from 'components/IntegrationTabs/servicesDictionary';
 import { FC } from 'react';
 import classes from './EmployeeCard.module.scss';
 
 interface Props {
-  services: IServicesData;
+  services: IServicesDictionary;
 }
 
 const EmployeeCard: FC<Props> = ({ services }) => {
