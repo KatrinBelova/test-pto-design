@@ -1,4 +1,4 @@
-export interface IServicesData {
+export interface IServicesDictionary {
   [key: string]: {
     id: string;
     img: string;
@@ -9,7 +9,7 @@ export interface IServicesData {
   };
 }
 
-export const servicesData: IServicesData = {
+export const servicesDictionary: IServicesDictionary = {
   id1: {
     id: 'id1',
     img: '/images/sapling.png',
